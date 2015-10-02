@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Isabel Z.v. Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="bootstrap/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="http://lorempixel.com/100/100/cats" class="img-rounded title-logo" alt="Isabel Zv logo">
+      </div>
+      <div class="col-xs-9 text-right text-uppercase">
+        <h1 class="title-super text-thin">Isabel Z.V.</h1>
+        <h3>Designer and Developer</h3>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <nav class="navbar">
+        <a id="menu" class="menu"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="#BCBBBB"></path>
+        </svg>
+        </a>
+      </nav>
+      <div class="row">
+        <nav class="nav">
+          <ul class="nav__list">
+            <!-- TODO -->
+            <li class="nav__item"><a href="#">News</a></li>
+            <li class="nav__item"><a href="#">Events</a></li>
+            <li class="nav__item"><a href="#">Culture</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    
+    <div class="row">
+  		<div class="col-md-12">
+        <img class="images img-rounded" src="images/glacier-park-landscape-sml.jpg" srcset="images/glacier-park-landscape-lrg.jpg 2x" alt="Glacier National Park Landscape">
+      </div>
+    </div>
+
+    <div class="row">
+  		<div class="col-md-3">
+      		<h2 class="text-muted">Featured Work</h2>
+      	</div>
+    </div>
+    
+    <div class="row text-center">
+      <div class="col-md-4">
+        	<img class="images img-rounded" src="images/stone-school-house-sml.jpg" srcset="images/stone-school-house-lrg.jpg 2x" alt="picture of a old stone school house" data-toggle="modal" data-target="#project1">
+          <h3>Appify</h3>
+          <p><a href="http://github.com/">Link to project</a></p>
+		  </div>
+
+  		<div class="col-md-4">
+          	<img class="images img-rounded" src="images/mountain-hike-sml.jpg" srcset="images/mountain-hike-lrg.jpg 2x" alt="Glacier National Park photo" data-toggle="modal" data-target="#project2">
+            <h3>p2</h3>
+            <p><a href="http://github.com/">Link to project</a></p>
+      </div>
+
+      <div class="col-md-4">
+          <img class="images img-rounded" src="images/montana-sunset-sml.jpg" srcset="images/montana-sunset-lrg.jpg 2x" alt="Montana sunset photo" data-toggle="modal" data-target="#project3">
+          <h3>p3</h3>
+          <p><a href="http://github.com/">Link to project</a></p>
+      </div>
+    </div>  
+  </div>
+  
+<!-- Modals -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="favoriteAppModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="favoriteAppModalLabel">Favorite App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail img-responsive center-block" src="images/stone-school-house-sml.jpg" alt="stone school house in Montana">
+        This was my first project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="p2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="p2ModalLabel">Second Project</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail img-responsive center-block" src="images/mountain-hike-sml.jpg" alt="Glacier National Park landscape">
+        This was my second project in this class.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="p3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="p3ModalLabel">Third Project</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail img-responsive center-block" src="images/montana-sunset-sml.jpg" alt="Montana sunset photograph">
+        This was my third project in this class.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+ 
+<script>
+       /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('body');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+</script>
+   
+
+
+
+</body></html>
